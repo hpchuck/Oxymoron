@@ -593,7 +593,7 @@
                 <!-- <form action="http://formspree.io/you@email.com"><input type="email" name="_replyto"><textarea   name="body"></textarea><input type="submit" value="Send"></form> -->
 
 
-                <form name="contactForm" id="contactForm" action="https://formspree.io/f/mqkjpjee" method="post"  novalidate="novalidate">
+                <!-- <form name="contactForm" id="contactForm" action="https://formspree.io/f/mqkjpjee" method="post"  novalidate="novalidate">
                     <fieldset>
     
                     <div class="form-field">
@@ -621,7 +621,49 @@
                     </div>
     
                     </fieldset>
-                </form>
+                </form> -->
+
+                <form id="fs-frm" name="contactForm" action="https://formspree.io/f/mqkjpjee" method="post">
+                    <fieldset id="fs-frm-inputs">
+                        
+                        <div class="form-field">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" name="name" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                        </div>
+                        
+                        <div class="form-field">
+                            <label for="email-address">Email Address</label>
+                            <!-- <div class="fx-relay-email-input-wrapper"> -->
+                            <input type="email" name="_replyto" id="email-address" placeholder="Your Email" required="" aria-required="true" class="full-width">
+                            
+                            <!-- <div class="fx-relay-icon" style="top: 0px; bottom: 24px;">
+                                <button class="fx-relay-button" id="fx-relay-button" type="button" title="Generate new mask" style="background-image: url(&quot;moz-extension://e2fcc54e-8fbe-4bbc-baf5-164c02dc022f/images/logo-image-fx-relay.svg&quot;);"></button>
+                            </div> -->
+                        </div>
+
+                        <div class="form-field">
+                            <!-- <label for="email-subject">Email Subject</label> -->
+                            <input type="text" name="_subject" id="email-subject" placeholder="Subject" value="" class="full-width" required="">
+                        </div>
+
+                        <div class="form-field">
+                            <!-- <label for="message">Message</label> -->
+                            <textarea rows="5" name="message" id="message" placeholder="Your Message" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                        </div>
+
+                        <div class="form-field">
+                            <button class="full-width btn--primary" type="submit" value="Submit">Submit</button>
+                            <div class="submit-loader">
+                                <div class="text-loader">Sending...</div>
+                                <div class="s-loader">
+                                    <div class="bounce1"></div>
+                                    <div class="bounce2"></div>
+                                    <div class="bounce3"></div>
+                                </div>
+                            </div>
+                    </fieldset>
+                    <!-- <input type="submit" value="Submit"> -->
+                  </form>
 
                 <!-- contact-warning -->
                 <div class="message-warning">
